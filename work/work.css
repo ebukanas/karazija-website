@@ -8,7 +8,11 @@
 body {
     font-family: NoveoSans;
     max-height: 100vh;
-    font-size: 1.5em;
+    background: rgb(215,213,255);
+    background: linear-gradient(90deg, rgba(215,213,255,0.41082370448179273) 0%, rgba(204,255,215,0.22875087535014005) 35%, rgba(164,197,203,0.1727284663865546) 69%, rgba(136,205,221,0.3435968137254902) 100%);
+}
+img {
+    max-width: 90%;
 }
 
 .container {
@@ -16,7 +20,7 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    padding: 2em;
+    padding: 1em;
     align-items: center;
 }
 
@@ -26,14 +30,13 @@ body {
 
 .description {
     margin-top: 1em;
-    background-color: white;
     flex: 0.3;
     text-align: left;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
-    max-width: 50%;
+    max-width: 80%;
     padding-bottom: 2em;
 }
 
@@ -55,6 +58,3 @@ body {
     text-align: center;
 }
 
-img {
-    max-width: 80%;
-}

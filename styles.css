@@ -10,6 +10,8 @@ body {
     height: 100vh;
     font-family: NoveoSans;
     overflow: hidden;
+    background: rgb(215,213,255);
+background: linear-gradient(90deg, rgba(215,213,255,0.41082370448179273) 0%, rgba(204,255,215,0.22875087535014005) 35%, rgba(164,197,203,0.1727284663865546) 69%, rgba(136,205,221,0.3435968137254902) 100%);
 }
 
 .navbar {
