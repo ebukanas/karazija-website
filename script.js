@@ -6,18 +6,21 @@ const footer = document.querySelector('.footer');
 const openMenu = document.getElementById('openMenu');
 const closeMenu = document.getElementById('closeMenu');
 const minResMenu = document.querySelector('.minResMenu');
+const navbar = document.querySelector('.navbar');
 // functions
 
 openMenu.addEventListener('click', function() {
     closeMenu.style.display = 'block';
     openMenu.style.display = 'none';
     minResMenu.style.display = 'block';
+    navbar.style.border = 'none';
 })
 
 closeMenu.addEventListener('click', function() {
     closeMenu.style.display = 'none';
     openMenu.style.display = 'block';
     minResMenu.style.display = 'none';
+    navbar.style.border = '1px solid black';
 })
 
 window.addEventListener('mousemove', function() {
