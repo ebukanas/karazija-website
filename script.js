@@ -25,16 +25,15 @@ closeMenu.addEventListener('click', function() {
 
 window.addEventListener('mousemove', function() {
     sections.forEach(section => {
-        section.addEventListener('mouseover', function(e) {
+        section.addEventListener('mouseover', function() {
             footer.classList.add('animate');
-
             footer.classList.remove('opacity');      
-            makeChanges(section);
             footer.ontransitionend = () => {
                 console.log('animation ended');
                 footer.classList.remove('animate');
                 footer.classList.add('opacity');
             }
+            makeChanges(section);
         })
     })
 })
@@ -74,4 +73,3 @@ function makeChanges(section) {
 
 //     return;
 // }
-
