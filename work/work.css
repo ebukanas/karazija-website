@@ -8,7 +8,7 @@
 body {
     font-family: NoveoSans;
     max-height: 100vh;
-    overflow: hidden;
+    font-size: 1.5em;
 }
 
 .container {
@@ -17,6 +17,7 @@ body {
     display: flex;
     flex-direction: column;
     padding: 2em;
+    align-items: center;
 }
 
 .image {
@@ -32,6 +33,8 @@ body {
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
+    max-width: 50%;
+    padding-bottom: 2em;
 }
 
 .description ul {
@@ -44,6 +47,10 @@ body {
     margin: 0.5em;
 }
 
+.image {
+    text-align: center;
+}
+
 img {
-    max-width: 100%;
+    max-width: 80%;
 }
