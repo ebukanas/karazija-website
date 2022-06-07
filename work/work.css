@@ -37,6 +37,10 @@ body {
     padding-bottom: 2em;
 }
 
+.description h1 {
+    text-align: center;
+}
+
 .description ul {
     text-align: left;
     display: inherit;
