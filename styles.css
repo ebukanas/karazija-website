@@ -3,10 +3,7 @@
 
 
 :root {
-    --VeryDarkGrayishBlue: hsl(217, 19%, 35%);
-    --DesaturatedDarkBlue: hsl(214, 17%, 51%);
-    --GrayishBlue: hsl(212, 23%, 69%);
-    --LightGrayishBlue: hsl(210, 46%, 95%);
+    --menu-color: #EFE9F4;
 }
 
 body {
@@ -24,6 +21,7 @@ body {
     align-items: center;
     justify-content: space-between;
     position: fixed;
+    cursor: pointer;
 }
 
 .navbar ul:last-child {
@@ -34,6 +32,11 @@ body {
     display: inline;
     text-align: center;
     margin: 0px 20px
+}
+
+.navbar li:not(#logo):hover {
+    color: #656B7B;
+
 }
 
 .container {

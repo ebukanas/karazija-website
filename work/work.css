@@ -1,0 +1,49 @@
+@font-face { font-family: NoveoSans; src: url('/NoveoSans-Book.ttf'); } 
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: NoveoSans;
+    max-height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+}
+
+.image {
+    /* flex: 1; */
+}
+
+.description {
+    margin-top: 1em;
+    background-color: white;
+    flex: 0.3;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.description ul {
+    text-align: left;
+    display: inherit;
+}
+
+.description li {
+    list-style: none;
+    margin: 0.5em;
+}
+
+img {
+    max-width: 100%;
+}
