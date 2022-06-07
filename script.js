@@ -23,7 +23,11 @@ closeMenu.addEventListener('click', function() {
     navbar.style.border = '1px solid black';
 })
 
-window.addEventListener('mousemove', function() {
+window.addEventListener('touchstart', handleEvent);
+window.addEventListener('mousemove', handleEvent);
+
+
+function handleEvent() {
     sections.forEach(section => {
         section.addEventListener('mouseover', function() {
             footer.classList.add('animate');
@@ -36,7 +40,9 @@ window.addEventListener('mousemove', function() {
             makeChanges(section);
         })
     })
-})
+
+}
+
 
 var totalSections = sections.length;
 

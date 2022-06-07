@@ -1,6 +1,10 @@
 /* smaller resolutions */
 
 @media screen and (max-width: 500px) {
+
+    .project-image {
+        text-align: center;
+    }
     
     .navbar {
         height: 50px;
@@ -23,6 +27,6 @@
     }
 
     section img {
-        max-width: 400px !important;
+        max-width: 90% !important;
     }
 }
