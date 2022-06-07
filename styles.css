@@ -1,0 +1,145 @@
+@font-face { font-family: Panama; src: url('Panama Monospace Regular.ttf'); } 
+@font-face { font-family: NoveoSans; src: url('NoveoSans-Book.ttf'); } 
+
+
+:root {
+    --VeryDarkGrayishBlue: hsl(217, 19%, 35%);
+    --DesaturatedDarkBlue: hsl(214, 17%, 51%);
+    --GrayishBlue: hsl(212, 23%, 69%);
+    --LightGrayishBlue: hsl(210, 46%, 95%);
+}
+
+body {
+    height: 100vh;
+    font-family: NoveoSans;
+    overflow: hidden;
+}
+
+.navbar {
+    border: 1px solid black;
+    list-style: none;
+    display: inline-flex;
+    width: 100%;
+    height: 70px;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+}
+
+.navbar ul:last-child {
+    margin-right: 30px;
+}
+
+.navbar li {
+    display: inline;
+    text-align: center;
+    margin: 0px 20px
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+}
+
+.project-image img {
+    max-width: 700px;
+}
+
+.project-image h1 {
+    text-align: center;
+}
+
+.footer {
+    display: flex;
+    width: -webkit-fill-available;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    padding: 2em;
+    z-index: -1;
+    opacity: 0;
+}
+
+.left, .right {
+    width: 100px;
+}
+
+.slide-active {
+    display: block;
+
+}
+
+#openMenu {
+    display: none;
+    cursor: pointer;
+}
+
+#closeMenu {
+    display: none;
+    cursor: pointer;
+}
+
+section {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: center;
+}
+
+.right a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.animate {
+    transition: all 1s;
+}
+
+.footer.animate {
+    opacity: 1;
+}
+
+.opacity {
+    opacity: 1;
+}
+
+.minResMenu {
+    background-color: #EFE9F4;
+    width: 100vh;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+    z-index: -1;
+}
+
+.minResMenu ul {
+    display: flex !important;
+    height: 100%;
+    justify-content: center !important;
+    flex-direction: column;
+    align-items: self-start;
+}
+
+.minResMenu ul li {
+    margin: 1em;
+    font-size: 2em;
+}
+
+#logo {
+    width: 30px;
+}

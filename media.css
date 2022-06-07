@@ -1,0 +1,28 @@
+/* smaller resolutions */
+
+@media screen and (max-width: 500px) {
+    
+    .navbar {
+        height: 50px;
+    }
+
+    .navbar ul {
+        padding: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navbar ul:last-child{
+        display: none;
+    }
+
+    #openMenu {
+        display: block;
+    }
+
+    section img {
+        max-width: 400px !important;
+    }
+}
