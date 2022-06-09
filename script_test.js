@@ -79,12 +79,13 @@ sections.forEach(section => {
 function isInViewport(element) {
     const rect = element.getBoundingClientRect();
     console.log(element.id + ' rect.bottom is ' + rect.bottom);
-    console.log(document.documentElement.clientHeight);
+    var elementWidth = document.documentElement.clientHeight;
+    console.log(elementWidth);
     return (
-        (rect.top + 100) >= 0 &&
+        (rect.top + (elementWidth / 3)) >= 0 &&
         rect.left >= 0 &&
-        (rect.bottom - 100) <= (window.innerHeight || document.documentElement.clientHeight) &&
-        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        (rect.bottom - (elementWidth / 3)) <= (window.innerHeight || elementWidth) &&
+        rect.right <= (window.innerWidth || elementWidth)
     );
 
 }
