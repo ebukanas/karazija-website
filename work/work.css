@@ -6,7 +6,6 @@
 
 * {
     padding: 0;
-    margin: 0;
 }
 
 body {
@@ -14,6 +13,7 @@ body {
     background: rgb(215,213,255);
     background: linear-gradient(90deg, rgba(215,213,255,0.41082370448179273) 0%, rgba(204,255,215,0.22875087535014005) 35%, rgba(164,197,203,0.1727284663865546) 69%, rgba(136,205,221,0.3435968137254902) 100%);
 }
+
 img {
     max-width: 90%;
 }
@@ -76,7 +76,7 @@ main {
     font-size: 1.5em;
     width: 100vw !important;
     padding: 2em 0;
-    color: --var(black);
+    color: var(--black);
     background: rgb(215,213,255);
     background: linear-gradient(90deg, rgba(215,213,255,1) 0%, rgba(204,255,215,1) 35%, rgba(164,197,203,1) 69%, rgba(136,205,221,1) 100%);    width: 100vh;
 }
@@ -93,3 +93,6 @@ main {
     text-decoration: underline;
 }
 
+.navbar {
+    position: unset !important;
+}
