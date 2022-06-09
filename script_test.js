@@ -36,7 +36,14 @@ const navbar = document.querySelector('.navbar');
 var timer;
   
 // checks if you scroll up or down
-window.onwheel = e => {
+window.onwheel = (e) => {
+    main(e);
+}
+
+window.addEventListener('touchstart', main);
+window.addEventListener('touchend', main);
+
+    function main(e) {
     if (e.deltaY >= 0) { //scroll down
         clearTimeout(timer);
         timer = setTimeout(function() {
@@ -82,9 +89,9 @@ function isInViewport(element) {
     var elementWidth = document.documentElement.clientHeight;
     console.log(elementWidth);
     return (
-        (rect.top + (elementWidth / 3)) >= 0 &&
+        (rect.top + (elementWidth / 1.5)) >= 0 &&
         rect.left >= 0 &&
-        (rect.bottom - (elementWidth / 3)) <= (window.innerHeight || elementWidth) &&
+        (rect.bottom - (elementWidth / 1.5)) <= (window.innerHeight || elementWidth) &&
         rect.right <= (window.innerWidth || elementWidth)
     );
 
