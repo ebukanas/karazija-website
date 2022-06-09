@@ -50,7 +50,7 @@ background: linear-gradient(90deg, rgba(215,213,255,0.53687412464986) 0%, rgba(2
 }
 
 section {
-    height: 100vh;
+    height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;

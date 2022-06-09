@@ -24,7 +24,7 @@
     }
 
     #openMenu {
-        display: block !important;
+        display: block;
     }
 
     section img {
