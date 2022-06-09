@@ -40,8 +40,12 @@ window.onwheel = (e) => {
     main(e);
 }
 
-window.addEventListener('touchstart', main);
+window.addEventListener('touchmove', main);
 window.addEventListener('touchend', main);
+window.addEventListener('touchstart', main);
+
+
+// window.addEventListener('touchend', main);
 
     function main(e) {
     if (e.deltaY >= 0) { //scroll down
@@ -59,12 +63,12 @@ window.addEventListener('touchend', main);
 }
 
 function checkSection() {
-    console.log('running checkSection');
+    // console.log('running checkSection');
 sections.forEach(section => {
     if (isInViewport(section) === true) {
         var ID = section.id;
         var totalSections = sections.length;
-        console.log(ID + section.getBoundingClientRect());
+        // console.log(ID + section.getBoundingClientRect());
 
         if (ID === 'first-img') {
             footerTitle.innerHTML = 'Betono gabalas';
@@ -83,15 +87,16 @@ sections.forEach(section => {
 });
 }
 
+// can you listen to the snap to section event instead? css: scroll-snap-align
+
 function isInViewport(element) {
     const rect = element.getBoundingClientRect();
-    console.log(element.id + ' rect.bottom is ' + rect.bottom);
+    // console.log(element.id + ' rect.bottom is ' + rect.bottom);
     var elementWidth = document.documentElement.clientHeight;
-    console.log(elementWidth);
     return (
-        (rect.top + (elementWidth / 1.5)) >= 0 &&
+        (rect.top + (elementWidth / 2)) >= 0 &&
         rect.left >= 0 &&
-        (rect.bottom - (elementWidth / 1.5)) <= (window.innerHeight || elementWidth) &&
+        (rect.bottom - (elementWidth / 2)) <= (window.innerHeight || elementWidth) &&
         rect.right <= (window.innerWidth || elementWidth)
     );
 
