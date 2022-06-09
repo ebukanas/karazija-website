@@ -25,16 +25,6 @@
 
 }
 
-#openMenu {
-    display: none;
-    cursor: pointer;
-}
-
-#closeMenu {
-    display: none;
-    cursor: pointer;
-}
-
 .minResMenu {
     background: rgb(215,213,255);
     background: linear-gradient(90deg, rgba(215,213,255,1) 0%, rgba(204,255,215,1) 35%, rgba(164,197,203,1) 69%, rgba(136,205,221,1) 100%);    width: 100vh;
@@ -62,3 +52,29 @@
 #logo {
     width: 30px;
 }
+
+
+/* large resolutions */
+@media screen and (min-width: 500px) {
+    #openMenu {
+        display: none;
+        cursor: pointer;
+    }
+    
+    #closeMenu {
+        display: none;
+        cursor: pointer;
+    }
+}
+
+/* small resolutions */
+@media screen and (max-width: 500px) {
+    #openMenu {
+        display: block;
+    }
+
+    #closeMenu {
+        display: none;
+    }
+}
+

@@ -1,4 +1,4 @@
-// declare variables
+// DOM elements ----------
 const sections =  document.querySelectorAll('section');
 const footerTitle = document.querySelector('.center h1');
 const footerIndex = document.querySelector('.left');
@@ -7,8 +7,48 @@ const openMenu = document.getElementById('openMenu');
 const closeMenu = document.getElementById('closeMenu');
 const minResMenu = document.querySelector('.minResMenu');
 const navbar = document.querySelector('.navbar');
-// functions
+const sectionImages = document.querySelectorAll('.project-image');
 
+
+// variables -----------
+
+// functions -----------
+
+const isTargetVisible = target => {
+    //Intersection Observer API
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const img = entry.target;
+        handleChanges(img);
+      }
+    });
+  });
+  io.observe(target)
+};
+
+//checks if an image is visible in the viewport
+sectionImages.forEach(isTargetVisible);
+
+function handleChanges(img) {
+    var ID = img.parentElement.id;
+    var totalSections = sections.length;
+
+    console.log(ID + ' is visible');
+
+    if (ID === 'first-img') {
+        footerTitle.innerHTML = 'Betono gabalas';
+        footerIndex.innerHTML = `01/0${totalSections}`;
+    } else if (ID === 'second-img') {
+        footerTitle.innerHTML = 'Chujnių gatvė';
+        footerIndex.innerHTML = `02/0${totalSections}`;
+    } else if (ID === 'third-img') {
+        footerTitle.innerHTML = 'Kažkoks kaimas';
+        footerIndex.innerHTML = `03/0${totalSections}`;
+    }
+}
+
+//navbar 
 openMenu.addEventListener('click', function() {
     closeMenu.style.display = 'block';
     openMenu.style.display = 'none';
@@ -22,60 +62,3 @@ closeMenu.addEventListener('click', function() {
     minResMenu.style.display = 'none';
     navbar.style.border = '1px solid black';
 })
-
-window.addEventListener('touchstart', handleEvent);
-window.addEventListener('mousemove', handleEvent);
-
-
-function handleEvent() {
-    sections.forEach(section => {
-        section.addEventListener('mouseover', function() {
-            footer.classList.add('animate');
-            footer.classList.remove('opacity');      
-            footer.ontransitionend = () => {
-                console.log('animation ended');
-                footer.classList.remove('animate');
-                footer.classList.add('opacity');
-            }
-            makeChanges(section);
-        })
-    })
-
-}
-
-
-var totalSections = sections.length;
-
-function makeChanges(section) {
-    var ID = section.id;
-    if (ID === 'first-img') {
-        footerTitle.innerHTML = 'Betono gabalas';
-        footerIndex.innerHTML = `01/0${totalSections}`;
-    } else if (ID === 'second-img') {
-        footerTitle.innerHTML = 'Chujnių gatvė';
-        footerIndex.innerHTML = `02/0${totalSections}`;
-    } else if (ID === 'third-img') {
-        footerTitle.innerHTML = 'Kažkoks kaimas';
-        footerIndex.innerHTML = `03/0${totalSections}`;
-    }
-}
-
-
-
-// var timer;
-//checks if you scroll up or down
-// window.onwheel = e => {
-//     if (e.deltaY >= 0) { //scroll down
-//         clearTimeout(timer);
-//         timer = setTimeout(function() {
-//         swipeDown();
-//         }, 100);
-//     } else { //scroll up
-//         clearTimeout(timer);
-//         timer = setTimeout(function() {
-//         swipeUp();
-//         }, 100);
-//     }
-
-//     return;
-// }
