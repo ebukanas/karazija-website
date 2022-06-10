@@ -40,7 +40,7 @@ background: linear-gradient(90deg, rgba(215,213,255,0.53687412464986) 0%, rgba(2
     align-items: center;
     position: fixed;
     bottom: 0;
-    padding: 2em;
+    padding: 1em;
     z-index: -1;
     opacity: 1;
 }
