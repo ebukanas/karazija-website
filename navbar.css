@@ -60,6 +60,7 @@
 #logo {
     width: 30px;
     color:black;
+    z-index: 2;
 }
 
 /* hamburger menu */

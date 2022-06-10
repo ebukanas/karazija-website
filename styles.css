@@ -17,8 +17,8 @@ background: linear-gradient(90deg, rgba(215,213,255,0.53687412464986) 0%, rgba(2
 background-repeat: no-repeat;
 background: url(/work/images/mesh-gradient2.png);
 background-size: cover;
-}
 
+}
 .container {
     height: 100vh;
     width: 100%;
