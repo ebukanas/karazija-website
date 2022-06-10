@@ -48,17 +48,25 @@ function handleChanges(img) {
     }
 }
 
-//navbar 
-openMenu.addEventListener('click', function() {
-    closeMenu.style.display = 'block';
-    openMenu.style.display = 'none';
-    minResMenu.style.display = 'block';
+let counter = 0;
+// navbar 
+openMenu.addEventListener('touchstart', function() {
+  console.log('running');
+
     navbar.style.border = 'none';
+    // openMenu.classList.add('active');
+    if (minResMenu.classList.contains('hidden')) {
+      minResMenu.classList.remove('hidden')
+    } else {
+      minResMenu.classList.add('hidden')
+    }
+
 })
 
-closeMenu.addEventListener('click', function() {
-    closeMenu.style.display = 'none';
-    openMenu.style.display = 'block';
-    minResMenu.style.display = 'none';
-    navbar.style.border = '1px solid black';
-})
+// closeMenu.addEventListener('click', function() {
+//     closeMenu.style.display = 'none';
+//     openMenu.style.display = 'block';
+//     minResMenu.style.display = 'none';
+//     navbar.style.border = '1px solid black';
+// })
+

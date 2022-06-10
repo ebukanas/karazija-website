@@ -10,8 +10,17 @@
     cursor: pointer;
 }
 
+.navbar ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;  
+}
+
 .navbar ul:last-child {
     margin-right: 30px;
+    justify-content: flex-end;
 }
 
 .navbar li {
@@ -32,8 +41,7 @@
     position: absolute;
     left: 0;
     top: 0;
-    display: none;
-    z-index: -1;
+    /* z-index: -1; */
 }
 
 .minResMenu ul {
@@ -52,6 +60,59 @@
 #logo {
     width: 30px;
     color:cadetblue;
+}
+
+/* hamburger menu */
+
+#checkbox {
+    display: none;
+}
+
+.hamburger {
+    position: relative;
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.line {
+    position: absolute;
+    width: 21px;
+    height: 2px;
+    background-color: black;
+    border-radius: 3px;
+    transition: transform .25, opacity .35;
+}
+
+.line--top {
+    transform: translateY(-7px);
+}
+
+.line--bottom {
+    transform: translateY(7px);
+}
+
+#checkbox:checked~.line--top {
+    transform: rotate(45deg);
+}
+
+#checkbox:checked~.line--middle {
+    transform: translate(16px);
+    opacity: 0;
+}
+
+#checkbox:checked~.line--bottom {
+    transform: rotate(-45deg);
+}
+
+#checkbox:checked~.minResMenu {
+    display: block;
+}
+
+.hidden {
+    display: none;
 }
 
 
@@ -75,6 +136,11 @@
     }
 
     #closeMenu {
+        display: none;
+    }
+
+    .navbar ul:last-child {
+        margin-right: 30px;
         display: none;
     }
 }

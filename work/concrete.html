@@ -11,24 +11,30 @@
 </head>
 <body>
     <main>
-        <div class="navbar">
-            <ul>
-              <li id="openMenu">O</li>
-              <li id="closeMenu">X
-                <div class="minResMenu">
-                  <ul>
-                    <li>about us</li>
-                    <li>information</li>
-                    <li>work</li>
-                  </ul>
-                </div>
-              </li>
-            </ul>
-            <ul>
-              <li>contact</li>
-              <li>about us</li>
-            </ul>
-          </div>
+      <div class="navbar">
+        <ul>
+          <li id="logo">KARAZIJA</li>
+          <li id="openMenu">
+            <div class="minResMenu hidden">
+              <ul>
+                <li>about us</li>
+                <li>information</li>
+                <li>work</li>
+              </ul>
+            </div>
+            <label for="checkbox" class="hamburger">
+              <input type="checkbox" id="checkbox">
+              <span class="line line--top"></span>
+              <span class="line line--middle"></span>
+              <span class="line line--bottom"></span>
+            </label>
+          </li>
+        </ul>
+        <ul>
+          <li>contact</li>
+          <li>about us</li>
+        </ul>
+      </div>
 
     <div class="container">
         <div class="image">
@@ -49,6 +55,6 @@
         </div>
     </div>
     </main>
-
+    <script src="/script.js"></script>
 </body>
 </html>
