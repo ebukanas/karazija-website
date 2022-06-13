@@ -10,17 +10,20 @@
 
 body {
     font-family: NoveoSans;
-    background-repeat: no-repeat;
-    background: url(/work/images/mesh-gradient2.png);
-    background-size: cover;
-    }
+    /* background: radial-gradient(circle at 2.03% 97.98%, #003973, transparent 100%),radial-gradient(circle at 97.97% 79.97%, #E5E5BE, transparent 100%),radial-gradient(circle at 50% 50%, #ffa7dc, #ffa7dc 100%);
+    background-attachment: fixed; */
+    background: rgb(215,213,255);
+    background: linear-gradient(90deg, rgba(215,213,255,1) 0%, rgba(204,255,215,1) 35%, rgba(164,197,203,1) 69%, rgba(136,205,221,1) 100%);    width: 100vh;
+    background-attachment: fixed;
+    width: 100%;
+}
 
 img {
     max-width: 90%;
 }
 
-main {
-    height: 100vh;
+a {
+    text-decoration: none;
 }
 
 .container {
@@ -32,9 +35,6 @@ main {
     align-items: center;
 }
 
-.image {
-    /* flex: 1; */
-}
 
 .description {
     margin-top: 1em;
@@ -77,8 +77,9 @@ main {
     width: 100vw !important;
     padding: 2em 0;
     color: var(--black);
-    background: rgb(215,213,255);
-    background: linear-gradient(90deg, rgba(215,213,255,1) 0%, rgba(204,255,215,1) 35%, rgba(164,197,203,1) 69%, rgba(136,205,221,1) 100%);    width: 100vh;
+    background-color: white;
+    /* background: rgb(215,213,255);
+    background: linear-gradient(90deg, rgba(215,213,255,1) 0%, rgba(204,255,215,1) 35%, rgba(164,197,203,1) 69%, rgba(136,205,221,1) 100%);    width: 100vh; */
 }
 
 .contact h2 {

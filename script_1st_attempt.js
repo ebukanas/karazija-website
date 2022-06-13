@@ -40,7 +40,6 @@ function handleEvent() {
             makeChanges(section);
         })
     })
-
 }
 
 

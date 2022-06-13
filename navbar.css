@@ -8,6 +8,7 @@
     justify-content: space-between;
     position: fixed;
     cursor: pointer;
+    color: white;
 }
 
 .navbar ul {
@@ -59,7 +60,7 @@
 
 #logo {
     width: 30px;
-    color:black;
+    color:white;
     z-index: 2;
 }
 

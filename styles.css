@@ -6,18 +6,19 @@
     --menu-color: #EFE9F4;
 }
 
+
 body {
     height: 100vh;
     font-family: NoveoSans;
-    overflow: hidden;
+    /* overflow: hidden; */
     /* background: rgb(215,213,255);
 background: linear-gradient(90deg, rgba(215,213,255,0.41082370448179273) 0%, rgba(204,255,215,0.22875087535014005) 35%, rgba(164,197,203,0.1727284663865546) 69%, rgba(136,205,221,0.3435968137254902) 100%); */
 /* background: rgb(215,213,255);
 background: linear-gradient(90deg, rgba(215,213,255,0.53687412464986) 0%, rgba(204,255,215,0.4976584383753502) 35%, rgba(164,197,203,0.5396752450980392) 69%, rgba(136,205,221,0.5144651610644257) 100%); */
-background-repeat: no-repeat;
+/* background-repeat: no-repeat;
 background: url(/work/images/mesh-gradient2.png);
-background-size: cover;
-
+background-size: cover; */
+background: radial-gradient(circle at 2.03% 97.98%, #003973, transparent 100%),radial-gradient(circle at 97.97% 79.97%, #E5E5BE, transparent 100%),radial-gradient(circle at 50% 50%, #ffa7dc, #ffa7dc 100%);
 }
 .container {
     height: 100vh;
@@ -27,8 +28,14 @@ background-size: cover;
     scroll-snap-type: y mandatory;
 }
 
+a {
+    text-decoration: none;
+}
+
 .project-image img {
     max-width: 500px;
+    box-shadow: -3px 3px 20px 4px #00000066;
+    border: solid 3px white;
 }
 
 .project-image h1 {
@@ -46,10 +53,29 @@ background-size: cover;
     padding: 1em;
     z-index: -1;
     opacity: 1;
+    color: white;
+    /* transform: scale(0); */
+}
+
+.animate {
+    transition: ease-in opacity 1s;
+}
+
+.footer.animate {
+    opacity: 0;
+    /* transform: scale(1.1); */
+}
+
+.opacity {
+    opacity: 1;
 }
 
 .left, .right {
     width: 100px;
+}
+
+.right a {
+    color: white !important;
 }
 
 section {
@@ -68,30 +94,3 @@ section {
     color: black;
     cursor: pointer;
 }
-
-.animate {
-    transition: all 1s;
-}
-
-.footer.animate {
-    opacity: 1;
-}
-
-.opacity {
-    opacity: 1;
-}
-
-.img-hover-zoom {
-    height: auto; /* [1.1] Set it as per your need */
-    overflow: hidden; /* [1.2] Hide the overflowing of child elements */
-  }
-  
-  /* [2] Transition property for smooth transformation of images */
-  .img-hover-zoom img {
-    transition: transform .5s ease;
-  }
-  
-  /* [3] Finally, transforming the image when container gets hovered */
-  .img-hover-zoom:hover img {
-    transform: scale(1.2);
-  }
