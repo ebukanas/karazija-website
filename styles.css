@@ -8,31 +8,13 @@
 
 
 body {
-    /* height: 100%; */
     font-family: NoveoSans;
-    /* overflow: hidden; */
-    /* background: rgb(215,213,255);
-background: linear-gradient(90deg, rgba(215,213,255,0.41082370448179273) 0%, rgba(204,255,215,0.22875087535014005) 35%, rgba(164,197,203,0.1727284663865546) 69%, rgba(136,205,221,0.3435968137254902) 100%); */
-/* background: rgb(215,213,255);
-background: linear-gradient(90deg, rgba(215,213,255,0.53687412464986) 0%, rgba(204,255,215,0.4976584383753502) 35%, rgba(164,197,203,0.5396752450980392) 69%, rgba(136,205,221,0.5144651610644257) 100%); */
-/* background-repeat: no-repeat;
-background: url(/work/images/mesh-gradient2.png);
-background-size: cover; */
-/* background: radial-gradient(circle at 2.03% 97.98%, #003973, transparent 100%),radial-gradient(circle at 97.97% 79.97%, #E5E5BE, transparent 100%),radial-gradient(circle at 50% 50%, #ffa7dc, #ffa7dc 100%); */
-/* background-color: white; */
     color: black;
     height: 100%;
     width: 100%;
     overflow-y: scroll;
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
-}
-.container {
-    /* height: 100vh;
-    width: 100%;
-    overflow-y: scroll;
-    scroll-behavior: smooth;
-    scroll-snap-type: y mandatory; */
 }
 
 a {
@@ -64,7 +46,6 @@ a {
     z-index: -1;
     opacity: 1;
     color: black;
-    /* transform: scale(0); */
 }
 
 .animate {
