@@ -8,7 +8,7 @@
 
 
 body {
-    height: 100vh;
+    height: 100%;
     font-family: NoveoSans;
     /* overflow: hidden; */
     /* background: rgb(215,213,255);
@@ -54,7 +54,7 @@ a {
     justify-content: space-between;
     text-align: center;
     align-items: center;
-    position: fixed;
+    position: sticky;
     bottom: 0;
     padding: 1em;
     z-index: -1;
@@ -85,8 +85,8 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    align-self: center;
+    /* align-items: center;
+    align-self: center; */
     scroll-snap-align: center;
 }
 
