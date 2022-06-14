@@ -37,7 +37,7 @@ a {
 .project-image img {
     max-width: 500px;
     box-shadow: -3px 3px 20px 4px #00000066;
-    border: solid 3px white;
+    /* border: solid 3px white; */
 }
 
 .project-image h1 {

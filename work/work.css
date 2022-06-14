@@ -6,16 +6,13 @@
 
 * {
     padding: 0;
+    margin: 0;
 }
 
 body {
     font-family: NoveoSans;
-    /* background: radial-gradient(circle at 2.03% 97.98%, #003973, transparent 100%),radial-gradient(circle at 97.97% 79.97%, #E5E5BE, transparent 100%),radial-gradient(circle at 50% 50%, #ffa7dc, #ffa7dc 100%);
-    background-attachment: fixed; */
-    background: rgb(215,213,255);
-    background: linear-gradient(90deg, rgba(215,213,255,1) 0%, rgba(204,255,215,1) 35%, rgba(164,197,203,1) 69%, rgba(136,205,221,1) 100%);    width: 100vh;
-    background-attachment: fixed;
-    width: 100%;
+    width: 100vw;
+    overflow-x: hidden;
 }
 
 img {
@@ -60,7 +57,7 @@ a {
 
 .description li {
     list-style: none;
-    margin: 0.5em;
+    margin: 1em 0;
 }
 
 .image {
@@ -76,10 +73,8 @@ a {
     font-size: 1.5em;
     width: 100vw !important;
     padding: 2em 0;
-    color: var(--black);
-    background-color: white;
-    /* background: rgb(215,213,255);
-    background: linear-gradient(90deg, rgba(215,213,255,1) 0%, rgba(204,255,215,1) 35%, rgba(164,197,203,1) 69%, rgba(136,205,221,1) 100%);    width: 100vh; */
+    color: white;
+    background-color: #9eb5a1;
 }
 
 .contact h2 {
