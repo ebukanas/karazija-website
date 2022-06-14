@@ -79,7 +79,7 @@ section {
     width: 100%;
     display: flex;
     scroll-snap-align: center;
-    align-items: center;
+    align-items: flex-end;
 }
 
 .right a {
