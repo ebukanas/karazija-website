@@ -10,7 +10,7 @@
 
 html {
     height: -webkit-fill-available;
-    /* scroll-snap-type: y mandatory; */
+    scroll-snap-type: y mandatory;
 }
 
 
@@ -31,7 +31,7 @@ section {
     height: calc(var(--height, 1vh)*100);
     /* height: calc(100 * var(--vh-unit));  */
     display: flex;
-    /* scroll-snap-align: center; */
+    scroll-snap-align: center;
     align-items: center;
     justify-content: center;
 }
@@ -42,6 +42,9 @@ a {
 
 .project-image {
     text-align: center;
+    background-color: red;
+    height: 40%;
+    width: 100%;
 }
 
 .project-image img {
@@ -66,7 +69,6 @@ a {
     z-index: -1;
     opacity: 1;
     color: black;
-    display: none;
 }
 
 .animate {
