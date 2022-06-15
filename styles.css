@@ -18,7 +18,7 @@ body {
     /* min-height: 100vh; */
     /* mobile viewport bug fix */
     /* min-height: -webkit-fill-available; */
-    scroll-snap-type: y mandatory;
+    /* scroll-snap-type: y mandatory; */
     background-color: pink;
 }
 
@@ -39,7 +39,7 @@ section {
     height: 100vh;
     width: 100%;
     display: flex;
-    scroll-snap-align: start;
+    /* scroll-snap-align: start; */
     align-items: center;
     justify-content: center;
 }
