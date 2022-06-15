@@ -19,7 +19,7 @@ body {
     /* mobile viewport bug fix */
     /* min-height: -webkit-fill-available; */
     /* scroll-snap-type: y mandatory; */
-    background-color: pink;
+    background-color: lightblue;
     min-height: 100vh;
     min-height: fill-available;
     min-height: -webkit-fill-available;
@@ -40,6 +40,7 @@ body {
 
 section {
     min-height: 100vh;
+    min-height: fill-available;
     width: 100%;
     display: flex;
     /* scroll-snap-align: start; */
