@@ -26,9 +26,6 @@ body {
     /* height: calc(var(--height, 1vh)*100); */
 }
 
-.navbar {
-    display: none;
-}
 
 section {
     height: calc(var(--height, 1vh)*100);
@@ -69,6 +66,7 @@ a {
     z-index: -1;
     opacity: 1;
     color: black;
+    display: none;
 }
 
 .animate {
