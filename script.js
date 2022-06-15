@@ -15,13 +15,13 @@ const sectionImages = document.querySelectorAll('.project-image');
 
 // functions -----------
 
-function appHeight() {
-  const doc = document.documentElement
-  doc.style.setProperty('--vh', (window.innerHeight*.01) + 'px');
-}
+// function appHeight() {
+//   const doc = document.documentElement
+//   doc.style.setProperty('--vh', (window.innerHeight*.01) + 'px');
+// }
 
-window.addEventListener('resize', appHeight);
-appHeight();
+// window.addEventListener('resize', appHeight);
+// appHeight();
 
 const isTargetVisible = target => {
     //Intersection Observer API

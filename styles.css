@@ -16,7 +16,8 @@ html {
 body {
     font-family: NoveoSans;
     color: black;
-    background-color: blue;
+    /* background-color: blue; */
+    background-color: pink;
     height: 100%;
 }
 
