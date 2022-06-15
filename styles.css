@@ -26,6 +26,10 @@ body {
     /* height: calc(var(--height, 1vh)*100); */
 }
 
+.navbar {
+    display: none;
+}
+
 section {
     height: calc(var(--height, 1vh)*100);
     /* height: calc(100 * var(--vh-unit));  */
