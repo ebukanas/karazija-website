@@ -8,15 +8,17 @@
 
 html {
     height: -webkit-fill-available;
+    scroll-snap-type: y mandatory;
 }
 
 body {
     font-family: NoveoSans;
     color: black;
-    width: 100%;
+    width: 100vw;
     min-height: 100vh;
     /* mobile viewport bug fix */
     min-height: -webkit-fill-available;
+    scroll-snap-type: y mandatory;
 }
 
 /* body.scroll-snap {
@@ -26,11 +28,10 @@ body {
 } */
 
 .container {
-    max-height: 100vh;
-    min-height: -webkit-fill-available;
+    /* height: -webkit-fill-available;
     overflow-y: scroll;
     scroll-behavior: smooth;
-    scroll-snap-type: y mandatory;
+    scroll-snap-type: y mandatory; */
 }
 
 section {
