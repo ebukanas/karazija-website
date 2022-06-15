@@ -19,7 +19,7 @@ body {
     /* mobile viewport bug fix */
     /* min-height: -webkit-fill-available; */
     /* scroll-snap-type: y mandatory; */
-    background-color: pink;
+    background-color: lightblue;
 }
 
 /* body.scroll-snap {
