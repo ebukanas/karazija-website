@@ -16,16 +16,17 @@ html {
 body {
     font-family: NoveoSans;
     color: black;
-    background-color: pink;
+    background-color: blue;
     height: 100%;
 }
 
 .container {
-
+    position: absolute;
+    height: 100%;
 }
 
 section {
-    height: 100svh;
+    height: 100vh;
     width: 100%;
     display: flex;
     scroll-snap-align: center;
