@@ -17,7 +17,7 @@ html {
 body {
     font-family: NoveoSans;
     color: black;
-    background-color: pink;
+    /* background-color: pink; */
     height: 100%;
 }
 
@@ -27,7 +27,8 @@ body {
 }
 
 section {
-    height: calc(100 * var(--vh-unit));  /* instead of '100vh' */
+    height: calc(var(--height, 1vh)*100);
+    /* height: calc(100 * var(--vh-unit));  */
     display: flex;
     scroll-snap-align: center;
     align-items: center;
