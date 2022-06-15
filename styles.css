@@ -6,14 +6,25 @@
     --menu-color: #EFE9F4;
 }
 
+html {
+    height: -webkit-fill-available;
+}
+
 
 body {
     font-family: NoveoSans;
     color: black;
-    height: 100%;
     width: 100%;
-
+    min-height: 100vh;
+    /* mobile viewport bug fix */
+    min-height: -webkit-fill-available;
 }
+
+/* body.scroll-snap {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+} */
 
 .container {
     height: 100vh;
