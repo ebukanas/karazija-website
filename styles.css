@@ -16,13 +16,13 @@ html {
 body {
     font-family: NoveoSans;
     color: black;
-    background-color: pink;
+    background-color: lightblue;
     height: 100%;
 }
 
 .container {
     height: 100vh;
-    height: calc(var(--vh, 1vh)*100);
+    height: calc(var(--height, 1vh)*100);
 }
 
 section {

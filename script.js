@@ -22,8 +22,9 @@ document.documentElement.style.setProperty('--vh', `${vh}px`);
 
 function setHeight() {
   // We execute the same script as before
+  console.log('running');
   let vh = window.innerHeight * 0.01;
-  document.documentElement.style.setProperty('--vh', `${vh}px`);
+  document.documentElement.style.setProperty('--height', `${vh}px`);
 }
 
 // We listen to the resize event
