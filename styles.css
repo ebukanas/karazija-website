@@ -4,6 +4,8 @@
 
 :root {
     --menu-color: #EFE9F4;
+    --vw-unit: 1vw;
+    --vh-unit: 1vh;
 }
 
 html {
@@ -12,11 +14,10 @@ html {
 }
 
 
-
 body {
     font-family: NoveoSans;
     color: black;
-    background-color: lightblue;
+    background-color: pink;
     height: 100%;
 }
 
@@ -26,15 +27,11 @@ body {
 }
 
 section {
-    height: 100%;
+    height: calc(100 * var(--vh-unit));  /* instead of '100vh' */
     display: flex;
     scroll-snap-align: center;
     align-items: center;
     justify-content: center;
-    transition: height 1000000s ease;
-    -webkit-transition: height 1000000s ease;
-    -moz-transition: height 1000000s ease;
-    -o-transition: height 1000000s ease;
 }
 
 a {
