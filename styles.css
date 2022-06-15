@@ -30,7 +30,7 @@ section {
     height: calc(var(--height, 1vh)*100);
     /* height: calc(100 * var(--vh-unit));  */
     display: flex;
-    scroll-snap-align: center;
+    /* scroll-snap-align: center; */
     align-items: center;
     justify-content: center;
 }
