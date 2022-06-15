@@ -10,7 +10,7 @@
 }
 
 html, body {
-    /* scroll-snap-type: y mandatory; */
+    scroll-snap-type: y mandatory;
     padding: 0;
     margin: 0;
     width: 100vw;
@@ -37,7 +37,7 @@ section {
     /* height: calc(var(--height, 1vh)*100); */
     /* height: calc(100 * var(--vh-unit));  */
     display: flex;
-    /* scroll-snap-align: center; */
+    scroll-snap-align: center;
     align-items: center;
     justify-content: center;
 }
