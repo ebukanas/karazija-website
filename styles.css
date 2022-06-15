@@ -14,19 +14,10 @@ html {
 body {
     font-family: NoveoSans;
     color: black;
-    /* width: 100vw; */
-    /* min-height: 100vh; */
-    /* mobile viewport bug fix */
-    /* min-height: -webkit-fill-available; */
-    /* scroll-snap-type: y mandatory; */
-    background-color: pink;
+    background-color: lightblue;
     /* min-height: 100vh;
     min-height: fill-available;
     min-height: -webkit-fill-available; */
-    min-height: 100vh;            /* fall-back */
-    min-height: -moz-available;
-    min-height: -webkit-fill-available;
-    min-height: fill-available;
 }
 
 /* body.scroll-snap {
@@ -36,20 +27,14 @@ body {
 } */
 
 .container {
-    /* height: -webkit-fill-available;
-    overflow-y: scroll;
-    scroll-behavior: smooth;
-    scroll-snap-type: y mandatory; */
+
 }
 
 section {
-    min-height: 100vh;
-    min-height: -moz-available;
-    /* min-height: -webkit-fill-available; */
-    min-height: fill-available;
+    min-height: calc(var(--vh) * 100);
     width: 100%;
     display: flex;
-    /* scroll-snap-align: start; */
+    scroll-snap-align: center;
     align-items: center;
     justify-content: center;
 }
