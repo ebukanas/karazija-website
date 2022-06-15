@@ -14,7 +14,7 @@ html {
 body {
     font-family: NoveoSans;
     color: black;
-    background-color: pink;
+    background-color: blue;
     /* min-height: 100vh;
     min-height: fill-available;
     min-height: -webkit-fill-available; */
@@ -31,6 +31,7 @@ body {
 }
 
 section {
+    height: 100vh;
     min-height: calc(var(--vh) * 100);
     width: 100%;
     display: flex;
