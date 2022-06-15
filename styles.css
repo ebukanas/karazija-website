@@ -22,7 +22,7 @@ body {
 
 .container {
     height: 100vh;
-    height: calc(var(--height, 1vh)*100);
+    /* height: calc(var(--height, 1vh)*100); */
 }
 
 section {
