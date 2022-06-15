@@ -27,8 +27,8 @@ function setHeight() {
   document.documentElement.style.setProperty('--height', `${vh}px`);
 }
 
-// We listen to the resize event
-window.addEventListener('resize', setHeight);
+// We listen to the load event
+window.addEventListener('load', setHeight);
 
 const isTargetVisible = target => {
     //Intersection Observer API
