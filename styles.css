@@ -19,10 +19,14 @@ body {
     /* mobile viewport bug fix */
     /* min-height: -webkit-fill-available; */
     /* scroll-snap-type: y mandatory; */
-    background-color: lightblue;
-    min-height: 100vh;
+    background-color: pink;
+    /* min-height: 100vh;
     min-height: fill-available;
+    min-height: -webkit-fill-available; */
+    min-height: 100vh;            /* fall-back */
+    min-height: -moz-available;
     min-height: -webkit-fill-available;
+    min-height: fill-available;
 }
 
 /* body.scroll-snap {
@@ -40,6 +44,8 @@ body {
 
 section {
     min-height: 100vh;
+    min-height: -moz-available;
+    /* min-height: -webkit-fill-available; */
     min-height: fill-available;
     width: 100%;
     display: flex;
