@@ -11,28 +11,21 @@ html {
     scroll-snap-type: y mandatory;
 }
 
+
+
 body {
     font-family: NoveoSans;
     color: black;
-    background-color: blue;
-    /* min-height: 100vh;
-    min-height: fill-available;
-    min-height: -webkit-fill-available; */
+    background-color: pink;
+    height: 100%;
 }
-
-/* body.scroll-snap {
-    overflow-y: scroll;
-    scroll-behavior: smooth;
-    scroll-snap-type: y mandatory;
-} */
 
 .container {
 
 }
 
 section {
-    height: 100vh;
-    min-height: calc(var(--vh) * 100);
+    height: 100svh;
     width: 100%;
     display: flex;
     scroll-snap-align: center;
