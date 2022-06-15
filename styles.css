@@ -4,13 +4,18 @@
 
 :root {
     --menu-color: #EFE9F4;
-    --vw-unit: 1vw;
-    --vh-unit: 1vh;
+    /* --vw-unit: 1vw;
+    --vh-unit: 1vh; */
+    --app-height: 100%;
 }
 
-html {
-    height: -webkit-fill-available;
+html, body {
     scroll-snap-type: y mandatory;
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    height: var(--app-height);
 }
 
 
@@ -18,7 +23,7 @@ body {
     font-family: NoveoSans;
     color: black;
     /* background-color: pink; */
-    height: 100%;
+    height: 100vh;
 }
 
 .container {
@@ -28,7 +33,8 @@ body {
 
 
 section {
-    height: calc(var(--height, 1vh)*100);
+    height: var(--app-height);
+    /* height: calc(var(--height, 1vh)*100); */
     /* height: calc(100 * var(--vh-unit));  */
     display: flex;
     scroll-snap-align: center;
