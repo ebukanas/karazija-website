@@ -10,7 +10,6 @@ html {
     height: -webkit-fill-available;
 }
 
-
 body {
     font-family: NoveoSans;
     color: black;
@@ -27,7 +26,7 @@ body {
 } */
 
 .container {
-    min-height: 100vh;
+    max-height: 100vh;
     min-height: -webkit-fill-available;
     overflow-y: scroll;
     scroll-behavior: smooth;
