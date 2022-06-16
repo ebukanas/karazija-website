@@ -29,6 +29,7 @@ body {
 
 
 section {
+    overflow:visible;
     height: 100vh;
     display: flex;
     scroll-snap-align: center;
@@ -41,8 +42,9 @@ a {
 }
 
 .project-image {
+    overflow:visible;
     text-align: center;
-    background-color: red;
+    background-color: blue;
     height: 40%;
     width: 100%;
 }
