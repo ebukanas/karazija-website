@@ -15,7 +15,7 @@ html, body {
     margin: 0;
     width: 100vw;
     height: 100vh;
-    height: var(--app-height);
+    /* height: var(--app-height); */
 }
 
 
@@ -28,7 +28,6 @@ body {
 
 .container {
     height: 100vh;
-    /* height: calc(var(--height, 1vh)*100); */
 }
 
 
