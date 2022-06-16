@@ -33,6 +33,7 @@ section {
     scroll-snap-align: center;
     align-items: center;
     justify-content: center;
+    transition: height 999999s;
 }
 
 a {
@@ -41,9 +42,10 @@ a {
 
 .project-image {
     text-align: center;
-    background-color: green;
+    background-color: blue;
     height: 40%;
     width: 100%;
+    transition: height 999999s;
 }
 
 .project-image img {
