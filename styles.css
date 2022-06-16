@@ -10,7 +10,7 @@
 }
 
 html, body {
-    /* scroll-snap-type: y mandatory; */
+    scroll-snap-type: y mandatory;
     padding: 0;
     margin: 0;
     width: 100vw;
@@ -30,9 +30,10 @@ body {
 section {
     height: var(--app-height);
     display: flex;
-    /* scroll-snap-align: center; */
+    scroll-snap-align: center;
     align-items: center;
     justify-content: center;
+    -webkit-transform: translate3d(0, 0, 0);
 }
 
 a {
@@ -41,7 +42,7 @@ a {
 
 .project-image {
     text-align: center;
-    background-color: red;
+    background-color: blue;
     height: 40%;
     width: 100%;
 }
