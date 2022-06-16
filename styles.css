@@ -10,11 +10,10 @@
 }
 
 html, body {
-    scroll-snap-type: y mandatory;
+    /* scroll-snap-type: y mandatory; */
     padding: 0;
     margin: 0;
     width: 100vw;
-    /* height: 100vh; */
     height: var(--app-height);
 }
 
@@ -22,7 +21,6 @@ html, body {
 body {
     font-family: NoveoSans;
     color: black;
-    /* background-color: pink; */
 }
 
 .container {
@@ -32,7 +30,7 @@ body {
 section {
     height: var(--app-height);
     display: flex;
-    scroll-snap-align: center;
+    /* scroll-snap-align: center; */
     align-items: center;
     justify-content: center;
 }
