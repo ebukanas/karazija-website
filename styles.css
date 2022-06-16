@@ -33,7 +33,6 @@ section {
     scroll-snap-align: center;
     align-items: center;
     justify-content: center;
-    -webkit-transform: translate3d(0, 0, 0);
 }
 
 a {
@@ -42,9 +41,10 @@ a {
 
 .project-image {
     text-align: center;
-    background-color: blue;
+    background-color: green;
     height: 40%;
     width: 100%;
+    -webkit-transform: translate3d(0, 0, 0);
 }
 
 .project-image img {
