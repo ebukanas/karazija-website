@@ -24,6 +24,7 @@ body {
 }
 
 .container {
+    -webkit-overflow-scrolling: touch
 }
 
 
@@ -31,10 +32,8 @@ section {
     height: 100vh;
     display: flex;
     scroll-snap-align: center;
-    overflow: hidden;
     align-items: center;
     justify-content: center;
-    transition: height 999999s;
 }
 
 a {
@@ -42,12 +41,10 @@ a {
 }
 
 .project-image {
-    overflow: hidden;
     text-align: center;
     background-color: red;
     height: 40%;
     width: 100%;
-    transition: height 999999s;
 }
 
 .project-image img {
