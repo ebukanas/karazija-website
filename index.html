@@ -53,17 +53,20 @@
       <div class="swiper-wrapper">
         <div class="swiper-slide">
             <div class="project-image" id="first-img">
-              <a href="work/concrete.html"><img src="work/images/webp/Betoninis namas.webp" alt="Betoninis Namas image"></a>
+              <a href="work/concrete.html"><img src="work/images/webp/Betoninis namas.webp" class="swiper-lazy" alt="Betoninis Namas image"></a>
+            <!-- preloader spinner that dissappears after loading up image (swiper.js) -->
+            <div class="swiper-lazy-preloader"></div>
             </div>
         </div>
         <div class="swiper-slide">
           <div class="project-image" id="second-img">
-            <a><img src="work/images/webp/S2-C1-.webp" alt="title"></a>
+            <a><img src="work/images/webp/S2-C1-.webp" class="swiper-lazy" alt="title"></a>
+            <div class="swiper-lazy-preloader"></div>
           </div>
         </div>
         <div class="swiper-slide">
           <div class="project-image" id="third-img">
-            <a><img src="work/images/webp/4 copy.webp" alt="title"></a>
+            <a><img src="work/images/webp/4 copy.webp" class="swiper-lazy" alt="title"></a>
           </div>
         </div>
 
@@ -82,10 +85,10 @@
         <a href="#">view<br>project</a>
       </div>
     </div>
-
+    <!-- custom js -->
+    <script src="/script.js"></script>
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="/script.js"></script>
     <!-- Initialize Swiper -->
     <script>
       var swiper = new Swiper(".mySwiper", {
@@ -94,10 +97,15 @@
           el: ".swiper-pagination",
           clickable: true,
         },
-        mousewheel: {
-        releaseOnEdges: true,
+          mousewheel: {
+          releaseOnEdges: true,
         },
-      });
+          effect: "slide", // coverflow is an alternative
+          // Disable preloading of all images
+          preloadImages: false,
+          // Enable lazy loading
+          lazy: true,   
+        });
     </script>
   </body>
 </html>
