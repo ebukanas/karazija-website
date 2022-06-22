@@ -1,27 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  
-  <link rel="stylesheet" type="text/css" href="styles.css">
-  <link rel="stylesheet" type="text/css" href="reset.css">
-  <link rel="stylesheet" type="text/css" href="media.css">
-  <link rel="stylesheet" type="text/css" href="navbar.css">
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+  <head>
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <!-- other stylesheets -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="media.css">
+    <link rel="stylesheet" type="text/css" href="navbar.css">
+    <!-- font -->
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
     </style>
-  <title>Karazija rulez</title>
-  <script>
-    // early compute the vw/vh units more reliably than CSS does itself
-    // computeViewportDimensions();
-    </script>
-</head>
-<body>
-<main>
-  <!-- <div class="navbar">
+    
+    <title>Karazija rulez</title>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+  <div class="navbar">
     <ul>
       <a href="/index.html"><li id="logo">KARAZIJA</li></a>
       <li id="openMenu">
@@ -39,31 +42,36 @@
           </ul>
         </nav>
       </li>
-
     </ul>
     <ul>
       <li>contact</li>
       <li>about us</li>
     </ul>
-  </div> -->
-  <div class="container">
-      <section id="first-img">
-      <div class="project-image">
-        <!-- <a href="work/concrete.html"><img src="work/images/webp/Betoninis namas.webp" alt="Betoninis Namas image"></a> -->
-      </div>
-      </section>
-      <section id="second-img">
-      <div class="project-image">
-        <!-- <a><img src="work/images/webp/S2-C1-.webp" alt="title"></a> -->
-      </div>
-      </section>
-      <section id="third-img">
-      <div class="project-image">
-        <!-- <a><img src="work/images/webp/4 copy.webp" alt="title"></a> -->
-      </div>
-      </section>
+  </div>
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <div class="project-image" id="first-img">
+              <a href="work/concrete.html"><img src="work/images/webp/Betoninis namas.webp" alt="Betoninis Namas image"></a>
+            </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="project-image" id="second-img">
+            <a><img src="work/images/webp/S2-C1-.webp" alt="title"></a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="project-image" id="third-img">
+            <a><img src="work/images/webp/4 copy.webp" alt="title"></a>
+          </div>
+        </div>
 
-    <!-- <div class="footer">
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+<!-- FOOTER -->
+    <div class="footer">
       <div class="left">
         01/03
       </div>
@@ -73,9 +81,23 @@
       <div class="right">
         <a href="#">view<br>project</a>
       </div>
-    </div> -->
-  </div>
-</main>
-  <!-- <script src="getMobileHeight.js"></script> -->
-</body>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="/script.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        direction: "vertical",
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        mousewheel: {
+        releaseOnEdges: true,
+        },
+      });
+    </script>
+  </body>
 </html>

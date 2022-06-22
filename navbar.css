@@ -8,7 +8,7 @@
     justify-content: space-between;
     position: fixed;
     cursor: pointer;
-    /* color: white; */
+    z-index: 5;
 }
 
 .navbar ul {
@@ -36,7 +36,7 @@
 
 .minResMenu {
     width: 100vh;
-    background: white;
+    background: antiquewhite;
     height: 100vh;
     position: fixed;
     left: 0;

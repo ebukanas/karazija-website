@@ -3,10 +3,16 @@
 
     body {
         font-size: 1em;
+        position: relative;
+        height: 100%;
     }
 
     .project-image {
         text-align: center;
+    }
+
+    .container {
+        display: none;
     }
 
     .navbar ul {
@@ -28,8 +34,5 @@
 
 @media screen and (min-width: 768px) {
 
-.project-image img {
-    max-width: 50%;
-}
 
 }
