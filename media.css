@@ -30,9 +30,22 @@
     section img {
         max-width: 90% !important;
     }
+
+    /* work page */
+    .wrapper {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "img1"
+        "img2"
+        "img3"
+        "img4";
+    }
 }
 
 @media screen and (min-width: 768px) {
-
+    .project-image {
+        max-width: 60%;
+    }
 
 }

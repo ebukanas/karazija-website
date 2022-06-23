@@ -1,0 +1,108 @@
+@font-face { font-family: NoveoSans; src: url('/NoveoSans-Book.ttf'); } 
+
+
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: NoveoSans;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.wrapper {  
+    height: 100vh;
+    padding: 100px 2em;
+    display: grid;
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 10px 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "img1 img2"
+      "img3 img4";
+  }
+
+.img {
+    border: 2px solid black;
+    width: 100%;
+    position: relative;
+    box-shadow: #44444429 0 0 0 400px inset;
+}
+
+.description {
+    color: white;
+    position: absolute;
+    bottom: 0;
+    margin: 5px;
+}
+
+.description h1 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    font-size: 1.5em;
+    width: 100vw !important;
+    padding: 2em 0;
+    color: white;
+    background-color: #9eb5a1;
+}
+
+.contact h2 {
+    margin-bottom: 15px;
+}
+
+.contact li {
+    margin: 10px;
+}
+
+.contact li:last-child {
+    text-decoration: underline;
+}
+
+.img1 {
+    background-image: url(/work/images/Betoninis\ namas.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.img2 {
+    background-image: url(/work/images/Entrance.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.img3 {
+    background-image: url(/work/images/4\ copy.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.img4 {
+    background-image: url(/work/images/S2-C1-.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+  
+  .img1 { grid-area: img1; }
+  .img2 { grid-area: img2; }
+  .img3 { grid-area: img3; }
+  .img4 { grid-area: img4; }
+  .img5 { grid-area: img5; }
+  .img6 { grid-area: img6; }
+  

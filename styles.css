@@ -13,6 +13,8 @@ html, body {
     width: 100vw;
     position: relative;
     height: 100%;
+    font-family: NoveoSans;
+    color: black;
 }
 
 .swiper {
@@ -46,12 +48,6 @@ html, body {
     height: 100%;
     object-fit: cover;
   }
-
-
-body {
-    font-family: NoveoSans;
-    color: black;
-}
 
 a {
     text-decoration: none;
