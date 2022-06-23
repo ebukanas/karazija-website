@@ -13,6 +13,17 @@ a {
     color: black;
 }
 
+.nav-fixed {
+    width: 100%;
+    position: fixed;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-active {
+    background-color:#fff;
+    box-shadow: 5px -1px 12px -5px grey;
+}
+
 .wrapper {  
     height: 100vh;
     padding: 100px 2em;
@@ -52,10 +63,10 @@ a {
     justify-content: center;
     align-items: center;
     list-style-type: none;
-    font-size: 1.5em;
+    font-size: 1.2em;
     width: 100vw !important;
-    padding: 2em 0;
-    color: white;
+    padding: 1em 0;
+    color: white !important;
     background-color: #9eb5a1;
 }
 
@@ -72,28 +83,28 @@ a {
 }
 
 .img1 {
-    background-image: url(/work/images/Betoninis\ namas.jpg);
+    background-image: url(/work/images/webp/Betoninis\ namas.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
 }
 
 .img2 {
-    background-image: url(/work/images/Entrance.jpeg);
+    background-image: url(/work/images/webp/Entrance.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
 }
 
 .img3 {
-    background-image: url(/work/images/4\ copy.jpg);
+    background-image: url(/work/images/webp/4\ copy.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
 }
 
 .img4 {
-    background-image: url(/work/images/S2-C1-.jpg);
+    background-image: url(/work/images/webp/S2-C1-.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;

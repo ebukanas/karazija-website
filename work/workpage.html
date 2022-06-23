@@ -16,7 +16,7 @@
 </head>
 <body>
     <!-- NAVBAR -->
-    <div class="navbar">
+    <div class="navbar" id="navbar">
         <ul>
           <a href="/index.html"><li id="logo">KARAZIJA</li></a>
           <li id="openMenu">
@@ -76,6 +76,17 @@
         <a href="mailto:#"></a><li>karazija@studio.com</li></a>
       </div>
 </footer>
+<!-- create background on navbar when scrolling down -->
+<script>
+    const navbar = document.querySelector('.navbar');
+    window.onscroll = () => {
+        if (window.scrollY > 50) {
+            navbar.classList.add('nav-active');
+        } else {
+            navbar.classList.remove('nav-active');
+        }
+    };
+</script>
 
 </body>
 </html>
