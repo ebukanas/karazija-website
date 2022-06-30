@@ -4,6 +4,8 @@
 
 :root {
     --menu-color: #EFE9F4;
+    --black: #191919;
+    --swiper-theme-color: #191919;
 }
 
 html, body {
@@ -55,7 +57,7 @@ a {
 }
 
 .project-image {
-    max-width: 100%;
+    max-width: 90%;
 }
 
 .project-image img {

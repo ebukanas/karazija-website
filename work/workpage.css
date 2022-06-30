@@ -8,6 +8,12 @@ body {
     font-family: NoveoSans;
 }
 
+.main {
+    height: 100%;
+    display: grid;
+    align-items: center;
+}
+
 a {
     text-decoration: none;
     color: black;
@@ -25,13 +31,12 @@ a {
 }
 
 .wrapper {  
-    height: 100vh;
     padding: 100px 2em;
     display: grid;
     grid-auto-columns: 1fr; 
     grid-template-columns: 1fr 1fr; 
     grid-template-rows: 1fr 1fr; 
-    gap: 10px 10px;
+    gap: 50px 10px;
     grid-auto-flow: row;
     grid-template-areas:
       "img1 img2"
@@ -39,8 +44,9 @@ a {
   }
 
 .img {
-    border: 2px solid black;
+    /* border: 2px solid black; */
     width: 100%;
+    height: 300px;
     position: relative;
     box-shadow: #44444429 0 0 0 400px inset;
 }
@@ -67,7 +73,14 @@ a {
     width: 100vw !important;
     padding: 1em 0;
     color: white !important;
-    background-color: #9eb5a1;
+    background-color: var(--black);
+}
+
+.contact-details-wp {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin-bottom: 1em;
 }
 
 .contact h2 {
@@ -76,6 +89,10 @@ a {
 
 .contact li {
     margin: 10px;
+}
+
+.contact a {
+    color: white;
 }
 
 .contact li:last-child {
@@ -93,7 +110,7 @@ a {
     background-image: url(/work/images/webp/Entrance.webp);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
+    background-position: bottom center;
 }
 
 .img3 {

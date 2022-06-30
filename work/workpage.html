@@ -12,36 +12,52 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
       </style>
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/23141b83d4.js" crossorigin="anonymous"></script>
+
     <title>Document</title>
 </head>
-<body>
+<body class="body">
     <!-- NAVBAR -->
-    <div class="navbar" id="navbar">
-        <ul>
-          <a href="/index.html"><li id="logo">KARAZIJA</li></a>
-          <li id="openMenu">
-            <input id="checkbox" type="checkbox">
-            <label for="checkbox" class="hamburger">
-              <span class="line line--top"></span>
-              <span class="line line--middle"></span>
-              <span class="line line--bottom"></span>
-            </label>
-            <nav class="minResMenu">
-              <ul>
-                <li>about us</li>
-                <li>work</li>
-                <li>contact</li>      
-              </ul>
-            </nav>
-          </li>
-        </ul>
-        <ul>
-          <li>about us</li>
-          <a href="/work/workpage.html"><li>work</li></a>
-          <li>contact</li> 
-        </ul>
-      </div>
+    <div class="navbar">
+      <ul>
+        <a href="/index.html"><li id="logo">KARAZIJA</li></a>
+        <li id="openMenu">
+          <input id="checkbox" type="checkbox">
+          <label for="checkbox" class="hamburger">
+            <span class="line line--top"></span>
+            <span class="line line--middle"></span>
+            <span class="line line--bottom"></span>
+          </label>
+          <nav class="minResMenu">
+            <ul>
+              <li>about us</li>
+              <a href="/work/workpage.html"><li>work</li></a>
+              <li>contact</li>      
+            </ul>
+            <ul class="contact-details">
+              <span id="CTA">let's talk!</span>
+              <a>
+                <i class="fa-solid fa-square-phone"></i>
+                <span>+3706 666 6666</span>
+              </a>
+              <a href="mailto:#">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <span>karazija@studio.lt</span>
+              </a>
+            </ul>
+          </nav>
+        </li>
+      </ul>
+      <ul>
+        <li>about us</li>
+        <a href="/work/workpage.html"><li>work</li></a>
+        <li>contact</li> 
+      </ul>
+    </div>
 <!-- MAIN CONTENT -->
+<div class="main">
         <div class="wrapper">
             <div class="img img1">
                 <div class="description">
@@ -69,13 +85,19 @@
             </div>
           </div>
 <!-- FOOTER -->
+</div>
 <footer>
     <div class="contact">
-        <h2>Impressed?</h2>
-        <span>+3706 694 20 69</span>
-        <a href="mailto:#"></a><li>karazija@studio.com</li></a>
-      </div>
+        <h2>ring ring?</h2>
+        <div class="contact-details-wp">
+          <span><i class="fa-solid fa-square-phone"></i>
+            +3706 694 20 69</span>
+          <a href="mailto:#"><i class="fa fa-envelope" aria-hidden="true"></i>
+            <span>karazija@studio.com</span></a>
+        </div>
+    </div>
 </footer>
+
 <!-- create background on navbar when scrolling down -->
 <script>
     const navbar = document.querySelector('.navbar');

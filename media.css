@@ -42,10 +42,13 @@
         "img4";
     }
 }
-
+/* larger resolutions */
 @media screen and (min-width: 768px) {
     .project-image {
-        max-width: 60%;
+        max-width: 75%;
+    }
+    .wrapper {
+        gap: 10px 10px;
     }
 
 }

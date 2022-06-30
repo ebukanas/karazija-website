@@ -1,3 +1,8 @@
+:root {
+    --black: #191919;
+}
+
+
 .navbar {
     /* border: 1px solid black; */
     list-style: none;
@@ -20,32 +25,49 @@
     padding: 0;
 }
 
-.navbar ul:last-child {
+.minResMenu .contact-details {
     margin-right: 30px;
-    justify-content: flex-end;
+    display: none;
+}
+
+.minResMenu .contact-details a {
+    margin: 10px;
+    height: 20px;
+    font-size: 1rem;
+}
+
+.minResMenu #CTA {
+    font-size: 2em;
+    margin-bottom: 5px;
 }
 
 .navbar li {
     display: inline;
     text-align: center;
-    margin: 0px 15px
+    margin: 0px 15px;
 }
 
 .navbar li:not(#logo):hover {
     color: #656B7B;
 }
 
+.navbar a {
+    z-index: 10;
+}
+
 .minResMenu {
-    width: 100vh;
-    background: antiquewhite;
-    height: 100vh;
+    width: 100vw;
+    background: var(--black);
+    height: 100%;
     position: fixed;
     left: 0;
     top: 0;
-    overflow: hidden;
-    color: black;
+    color: white;
     transition: transform 0.3s ease-out;
     transform: translate(100%);
+    font-size: 0.7rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .minResMenu {
@@ -57,7 +79,9 @@
     height: 100%;
     justify-content: center !important;
     flex-direction: column;
-    align-items: self-start !important;
+    align-items: center;
+    /* align-content: flex-end !important; */
+    width: 100vw;
 }
 
 .minResMenu ul li {
@@ -65,10 +89,17 @@
     font-size: 2em;
 }
 
+.minResMenu a {
+    color: white;
+}
+
 #logo {
     width: 30px;
-    color: black;
     padding-left: 15px;
+}
+
+.whitelogo {
+    color:white;
 }
 
 /* hamburger menu */
@@ -106,6 +137,7 @@
 
 #checkbox:checked~.hamburger .line--top {
     transform: rotate(45deg);
+    background-color: white;
 }
 
 #checkbox:checked~.hamburger .line--middle {
@@ -115,6 +147,7 @@
 
 #checkbox:checked~.hamburger .line--bottom {
     transform: rotate(-45deg);
+    background-color: white;
 }
 
 #checkbox:checked~ nav {
@@ -153,8 +186,9 @@
         display: none;
     }
 
-    .navbar ul:last-child {
+    .contact-details {
         margin-right: 30px;
-        display: none;
+        height: 100px;
+        margin: 0 !important;
     }
 }
