@@ -25,7 +25,7 @@ a {
 
 .container {
     max-width: 100%;
-    margin-top: 3em;
+    margin-top: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -43,11 +43,12 @@ a {
     flex-direction: column;
     max-width: 80%;
     padding-bottom: 2em;
-    font-size: 1.5em;
+    font-size: 1.2rem;
 }
 
 .description h1 {
     text-align: center;
+    font-size: 1.8rem;
 }
 
 .description ul {
@@ -87,8 +88,4 @@ a {
 
 .contact li:last-child {
     text-decoration: underline;
-}
-
-.navbar {
-    position: unset !important;
 }

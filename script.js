@@ -17,9 +17,9 @@ const checkbox = document.getElementById('checkbox');
 
 
 
-
 // changes the logo color to white when navbar is expanded on mobile
 hamburger.addEventListener('touchend', function() {
+  console.log('runnning');
   if (logo.classList.contains('whitelogo')) {
     logo.classList.remove('whitelogo');
   } else {

@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="work.css">
     <link rel="stylesheet" type="text/css" href="/navbar.css">
+    <link rel="stylesheet" type="text/css" href="/work/footer.css">
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/23141b83d4.js" crossorigin="anonymous"></script>
 
     <title>Betono gabalas</title>
 </head>
@@ -49,13 +53,38 @@
             </ul>
                 <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. At adipisci earum dolor iste porro, architecto eaque laudantium, facere totam qui quibusdam deserunt voluptates, asperiores similique est sapiente. Iusto, culpa dolorem!</li>
         </div>
-        <div class="contact">
-          <h2>Impressed?</h2>
-          <li>+3706 694 20 69</li>
-          <a href="mailto:#"></a><li>karazija@studio.com</li></a>
-        </div>
+<!-- FOOTER -->
+<footer>
+  <div class="contact">
+    <div class="socials">
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-facebook-f"></i>
+      <i class="fa-brands fa-linkedin"></i>
+    </div>
+      <h2>Let's talk!</h2>
+      <div class="contact-details-wp">
+        <span><i class="fa-solid fa-square-phone"></i>
+          +3706 694 20 69</span>
+        <a href="mailto:#"><i class="fa fa-envelope" aria-hidden="true"></i>
+          <span>karazija@studio.com</span></a>
+      </div>
+      <div class="copyright">
+        <span>© web services by JimmyB</span>
+      </div>
+  </div>
+</footer>
     </div>
     </main>
-    <script src="/script.js"></script>
+    <!-- create background on navbar when scrolling down -->
+<script>
+  window.onscroll = () => {
+      if (window.scrollY > 50) {
+          navbar.classList.add('nav-active');
+      } else {
+          navbar.classList.remove('nav-active');
+      }
+  };
+</script>
+<script src="/script.js"></script>
 </body>
 </html>

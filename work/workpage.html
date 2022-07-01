@@ -9,6 +9,8 @@
     <link rel="stylesheet" type="text/css" href="/work/workpage.css">
     <link rel="stylesheet" type="text/css" href="/navbar.css">
     <link rel="stylesheet" type="text/css" href="/media.css">
+    <link rel="stylesheet" type="text/css" href="/work/footer.css">
+  
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
       </style>
@@ -18,7 +20,7 @@
 
     <title>Document</title>
 </head>
-<body class="body">
+<body>
     <!-- NAVBAR -->
     <div class="navbar">
       <ul>
@@ -36,16 +38,18 @@
               <a href="/work/workpage.html"><li>work</li></a>
               <li>contact</li>      
             </ul>
-            <ul class="contact-details">
-              <span id="CTA">let's talk!</span>
-              <a>
-                <i class="fa-solid fa-square-phone"></i>
-                <span>+3706 666 6666</span>
-              </a>
-              <a href="mailto:#">
-                <i class="fa fa-envelope" aria-hidden="true"></i>
-                <span>karazija@studio.lt</span>
-              </a>
+            <ul class="contact-CTA">
+              <span id="CTA">Let's talk!</span>
+              <div class="contact-details">
+                <a>
+                  <i class="fa-solid fa-square-phone"></i>
+                  <span>+3706 666 6666</span>
+                </a>
+                <a href="mailto:#">
+                  <i class="fa fa-envelope" aria-hidden="true"></i>
+                  <span>karazija@studio.lt</span>
+                </a>
+            </div>
             </ul>
           </nav>
         </li>
@@ -60,55 +64,65 @@
 <div class="main">
         <div class="wrapper">
             <div class="img img1">
-                <div class="description">
+                <div class="img-description">
                     <h1>Betono Gabalas</h1>
                     <span>Los Angeles - 2021</span>
                 </div>
             </div>
             <div class="img img2">
-                <div class="description">
+                <div class="img-description">
                     <h1>Ale Laiptai</h1>
                     <span>San Francisco - 2020</span>
                 </div>
             </div>
             <div class="img img3">
-                <div class="description">
+                <div class="img-description">
                     <h1>Kažkoks Kaimas</h1>
                     <span>Texas - 2019</span>
                 </div>
             </div>
             <div class="img img4">
-                <div class="description">
+                <div class="img-description">
                     <h1>Mandra Dežutė</h1>
                     <span>Kaunas - 2022</span>
                 </div>
             </div>
-          </div>
+         </div>
+
 <!-- FOOTER -->
-</div>
 <footer>
-    <div class="contact">
-        <h2>ring ring?</h2>
-        <div class="contact-details-wp">
-          <span><i class="fa-solid fa-square-phone"></i>
-            +3706 694 20 69</span>
-          <a href="mailto:#"><i class="fa fa-envelope" aria-hidden="true"></i>
-            <span>karazija@studio.com</span></a>
-        </div>
+  <div class="contact">
+    <div class="socials">
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-facebook-f"></i>
+      <i class="fa-brands fa-linkedin"></i>
     </div>
+      <h2>Let's talk!</h2>
+      <div class="contact-details-wp">
+        <span><i class="fa-solid fa-square-phone"></i>
+          +3706 694 20 69</span>
+        <a href="mailto:#"><i class="fa fa-envelope" aria-hidden="true"></i>
+          <span>karazija@studio.com</span></a>
+      </div>
+      <div class="copyright">
+        <span>© web services by JimmyB</span>
+      </div>
+  </div>
 </footer>
+</div>
 
 <!-- create background on navbar when scrolling down -->
 <script>
-    const navbar = document.querySelector('.navbar');
-    window.onscroll = () => {
-        if (window.scrollY > 50) {
-            navbar.classList.add('nav-active');
-        } else {
-            navbar.classList.remove('nav-active');
-        }
-    };
+  window.onscroll = () => {
+      if (window.scrollY > 50) {
+          navbar.classList.add('nav-active');
+      } else {
+          navbar.classList.remove('nav-active');
+      }
+  };
 </script>
 
+    <!-- custom js -->
+    <script src="/script.js"></script>
 </body>
 </html>

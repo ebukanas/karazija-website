@@ -1,0 +1,53 @@
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    font-size: 1.2em;
+    width: 100vw;
+    padding: 2em 0;
+    color: white !important;
+    background-color: var(--black);
+}
+
+.contact-details-wp {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin-bottom: 2em;
+}
+
+.contact h2 {
+    margin-bottom: 15px;
+}
+
+.contact li {
+    margin: 10px;
+}
+
+.contact a {
+    color: white;
+}
+
+.contact li:last-child {
+    text-decoration: underline;
+}
+
+.contact .socials {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.contact .socials i {
+    margin: 5px;
+}
+
+.contact .copyright {
+    font-size: 0.8em;
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid white;
+    padding-top: 2em;
+}

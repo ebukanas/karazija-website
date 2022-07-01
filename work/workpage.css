@@ -19,17 +19,6 @@ a {
     color: black;
 }
 
-.nav-fixed {
-    width: 100%;
-    position: fixed;
-    transition: 0.3s ease-in-out;
-}
-
-.nav-active {
-    background-color:#fff;
-    box-shadow: 5px -1px 12px -5px grey;
-}
-
 .wrapper {  
     padding: 100px 2em;
     display: grid;
@@ -41,7 +30,19 @@ a {
     grid-template-areas:
       "img1 img2"
       "img3 img4";
-  }
+}
+
+.img-description {
+    color: white;
+    position: absolute;
+    bottom: 0;
+    margin: 5px;
+}
+
+.img-description h1 {
+    margin: 0;
+    font-size: 1.5em;
+}
 
 .img {
     /* border: 2px solid black; */
@@ -49,54 +50,6 @@ a {
     height: 300px;
     position: relative;
     box-shadow: #44444429 0 0 0 400px inset;
-}
-
-.description {
-    color: white;
-    position: absolute;
-    bottom: 0;
-    margin: 5px;
-}
-
-.description h1 {
-    margin: 0;
-    font-size: 1.5em;
-}
-
-.contact {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    list-style-type: none;
-    font-size: 1.2em;
-    width: 100vw !important;
-    padding: 1em 0;
-    color: white !important;
-    background-color: var(--black);
-}
-
-.contact-details-wp {
-    display: flex;
-    flex-direction: column;
-    color: white;
-    margin-bottom: 1em;
-}
-
-.contact h2 {
-    margin-bottom: 15px;
-}
-
-.contact li {
-    margin: 10px;
-}
-
-.contact a {
-    color: white;
-}
-
-.contact li:last-child {
-    text-decoration: underline;
 }
 
 .img1 {

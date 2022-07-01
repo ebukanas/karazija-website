@@ -2,7 +2,7 @@
 @media screen and (max-width: 500px) {
 
     body {
-        font-size: 1em;
+        font-size: 1.2em;
         position: relative;
         height: 100%;
     }
@@ -45,10 +45,25 @@
 /* larger resolutions */
 @media screen and (min-width: 768px) {
     .project-image {
-        max-width: 75%;
+        max-width: 70%;
     }
     .wrapper {
         gap: 10px 10px;
     }
 
 }
+
+/* larger resolutions */
+@media screen and (min-width: 1000px) {
+    .project-image {
+        max-width: 60%;
+    }
+}
+
+/* larger resolutions */
+@media screen and (min-width: 1150px) {
+    .project-image {
+        max-width: 55%;
+    }
+}
+

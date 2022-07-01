@@ -16,7 +16,7 @@ html, body {
     position: relative;
     height: 100%;
     font-family: NoveoSans;
-    color: black;
+    color: var(--black);
 }
 
 .swiper {
