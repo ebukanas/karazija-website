@@ -16,6 +16,14 @@
     top: 0;
 }
 
+.navbar a {
+    text-decoration: none;
+}
+
+.navbar a:active {
+    color: inherit;
+}
+
 .navbar ul {
     display: flex;
     width: 100%;
@@ -46,7 +54,7 @@
 }
 
 .minResMenu #CTA {
-    font-size: 1.5em;
+    font-size: 1.4em;
     margin-bottom: 15px;
 }
 
