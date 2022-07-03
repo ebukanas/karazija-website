@@ -15,6 +15,7 @@ const checkbox = document.getElementById('checkbox');
 // variables -----------
 // functions -----------
 
+//navbar transition animations
 hamburger.addEventListener('touchend', function() {
   if (minResMenu.classList.contains('opened')) {
     minResMenu.classList.remove('opened');
@@ -34,8 +35,8 @@ hamburger.addEventListener('touchend', function() {
   }
 });
 
+//Intersection Observer API
 const isTargetVisible = target => {
-    //Intersection Observer API
   const io = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -70,3 +71,10 @@ function handleChanges(img) {
     }
 }
 
+// calculates height to work around the safari height: 100vh bug
+const appHeight = () => {
+  const doc = document.documentElement
+  doc.style.setProperty('--app-height', `${window.innerHeight}px`)
+ }
+ window.addEventListener('resize', appHeight);
+ appHeight();
