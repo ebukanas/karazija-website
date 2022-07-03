@@ -81,6 +81,7 @@
     top: 0;
     color: white;
     transition: transform 0.3s ease-out;
+    transform: translate(100%);
     font-size: 1.2em;
     display: flex;
     flex-direction: column;
