@@ -81,14 +81,9 @@
     top: 0;
     color: white;
     transition: transform 0.3s ease-out;
-    transform: translate(100%);
     font-size: 1.2em;
     display: flex;
     flex-direction: column;
-}
-
-.minResMenu {
-    max-height: 0;
 }
 
 .minResMenu ul {
@@ -167,10 +162,17 @@
     max-height: 100%;
 }
 
-#checkbox:checked~.minResMenu {
+.minResMenu.opened {
     transform: translate(0);
 }
 
+.minResMenu.closed {
+    transform: translate(100%);
+}
+
+.closed, .opened {
+    transition: transform 0.3s ease-out;
+}
 
 .hidden {
     display: none;

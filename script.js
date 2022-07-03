@@ -16,8 +16,12 @@ const checkbox = document.getElementById('checkbox');
 // functions -----------
 
 hamburger.addEventListener('touchend', function() {
-  if (checkbox.checked) {
-    minResMenu.classList.add('menu-transform');
+  if (minResMenu.classList.contains('opened')) {
+    minResMenu.classList.remove('opened');
+    minResMenu.classList.add('closed');
+  } else {
+    minResMenu.classList.remove('closed');
+    minResMenu.classList.add('opened');
   }
 });
 
