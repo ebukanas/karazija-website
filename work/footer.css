@@ -20,7 +20,8 @@
 }
 
 .contact h2 {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .contact li {
@@ -37,7 +38,6 @@
 
 .contact .socials {
     font-size: 1.2em;
-    margin-bottom: 10px;
 }
 
 .contact .socials i {

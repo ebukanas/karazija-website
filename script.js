@@ -15,11 +15,14 @@ const checkbox = document.getElementById('checkbox');
 // variables -----------
 // functions -----------
 
-
+hamburger.addEventListener('touchend', function() {
+  if (checkbox.checked) {
+    minResMenu.classList.add('menu-transform');
+  }
+});
 
 // changes the logo color to white when navbar is expanded on mobile
 hamburger.addEventListener('touchend', function() {
-  console.log('runnning');
   if (logo.classList.contains('whitelogo')) {
     logo.classList.remove('whitelogo');
   } else {

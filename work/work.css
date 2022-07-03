@@ -13,6 +13,7 @@ body {
     font-family: NoveoSans;
     max-width: 100vw;
     overflow-x: hidden;
+    font-size: 16px;
 }
 
 img {
@@ -65,27 +66,3 @@ a {
     text-align: center;
 }
 
-.contact {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    list-style-type: none;
-    font-size: 1.5em;
-    width: 100vw !important;
-    padding: 2em 0;
-    color: white;
-    background-color: var(--black);
-}
-
-.contact h2 {
-    margin-bottom: 15px;
-}
-
-.contact li {
-    margin: 10px;
-}
-
-.contact li:last-child {
-    text-decoration: underline;
-}
