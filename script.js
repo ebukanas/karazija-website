@@ -20,17 +20,10 @@ hamburger.addEventListener('touchend', function() {
   if (minResMenu.classList.contains('opened')) {
     minResMenu.classList.remove('opened');
     minResMenu.classList.add('closed');
+    logo.classList.remove('whitelogo');
   } else {
     minResMenu.classList.remove('closed');
     minResMenu.classList.add('opened');
-  }
-});
-
-// changes the logo color to white when navbar is expanded on mobile
-hamburger.addEventListener('touchend', function() {
-  if (logo.classList.contains('whitelogo')) {
-    logo.classList.remove('whitelogo');
-  } else {
     logo.classList.add('whitelogo');
   }
 });

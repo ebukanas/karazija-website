@@ -43,6 +43,9 @@
 }
 /* larger resolutions */
 @media screen and (min-width: 768px) {
+    body {
+        font-size: 1.4em;
+    }
     .project-image {
         max-width: 70%;
     }
@@ -52,17 +55,17 @@
 
 }
 
-/* larger resolutions */
+/* larger resolutions 1000px */
 @media screen and (min-width: 1000px) {
     .project-image {
-        max-width: 60%;
+        max-width: 55%;
     }
 }
 
-/* larger resolutions */
+/* larger resolutions 1150px */
 @media screen and (min-width: 1150px) {
     .project-image {
-        max-width: 55%;
+        max-width: 50%;
     }
 }
 
